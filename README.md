@@ -5,12 +5,13 @@
  
  # Docs
 
-There are 3 main methods to fetch the data: 
+There are 4 main methods to fetch the data: 
  
  `getshards()`
  `getclient()`
  `getbasics()`
- 
+ `gethandler()`
+
  simple code:
  ```py
  hino = Hino()
@@ -95,5 +96,26 @@ the 6 cases are:
 ```py
 hino = Hino()
 hino.getclient("name")
+```
+<hr>
+
+### gethandler()
+
+#### Arguments
+info: str
+
+#### returns
+data as string data type
+
+#### how to use it
+you can get diffrent data by changing the value of `info` , `info` has 7 cases, if diffrent value were put, it will return `TypeError`
+the 7 cases are:
+- name - description - version
+- process - websocket - type 
+- module
+
+```py
+hino = Hino()
+hino.gethandler("description")
 ```
 <hr>
