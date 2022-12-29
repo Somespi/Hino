@@ -4,6 +4,13 @@
  <hr>
  
  # Docs
+ 
+ ## Installation
+ you can install this package by typing
+ 
+ ```py
+ $ pip install hino
+ ```
 
 There are 4 main methods to fetch the data: 
  
