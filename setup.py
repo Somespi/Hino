@@ -15,7 +15,7 @@ setup(
     license='MIT',
     keywords=["API","hino","unofficial"],
     url='https://github.com/Somespi/Hino/',
-    ackage_dir={'':"hino"},
+    package_dir={'':"hino"},
     packages=find_packages("hino"),
     scripts=[],
     install_requires=['requests'],
