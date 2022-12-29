@@ -4,13 +4,13 @@ def GET_SHARDS(info: str, shardnum: int = None) -> str:
 	    from hinoapi import api
             info = info.lower().replace(" ", "")
             if shardnum is None and info == "count":
-                return self.api["shards"]["count"]
+                return api["shards"]["count"]
             elif shardnum and info:
-                if int(self.api["shards"]["count"]) >= shardnum:
+                if int(api["shards"]["count"]) >= shardnum:
                     keywords = list(self.api["shards"][f"shard{shardnum}"].keys())
                     for x in keywords:
                         if x in info:
-                            return str(self.api["shards"][f"shard{shardnum}"][x])
+                            return str(api["shards"][f"shard{shardnum}"][x])
                     else:
                         raise TypeError(
                             f"\"{info}\" is not defined in \"shards Info\".")
