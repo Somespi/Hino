@@ -1,3 +1,6 @@
+import requests
+import json 
+
 class Hino:
     res = requests.get("https://hino.tk/api", stream=True)
     if res.status_code != 200:
