@@ -1,5 +1,5 @@
 
-def getbasics(info: str) -> str:
+def GET_BASICS(info: str) -> str:
             """Return basic info about Hino"""
 	    from hinoapi import api
             info = info.lower().replace(" ", "")
