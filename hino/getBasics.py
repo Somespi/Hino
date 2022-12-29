@@ -1,7 +1,7 @@
 
 def GET_BASICS(info: str) -> str:
             """Return basic info about Hino"""
-	    from hinoapi import api
+            from hinoapi import api
             info = info.lower().replace(" ", "")
             for i in list(api.keys())[:-1]:
                 if i in info:

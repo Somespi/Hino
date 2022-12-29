@@ -1,7 +1,7 @@
 
 def GET_SHARDS(info: str, shardnum: int = None) -> str:
             """Return shards info about Hino"""
-	    from hinoapi import api
+            from hinoapi import api
             info = info.lower().replace(" ", "")
             if shardnum is None and info == "count":
                 return api["shards"]["count"]

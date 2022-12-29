@@ -1,7 +1,7 @@
 
 def GET_HANDLER(info: str) -> str:
             """Return handler info about Hino"""
-	    from hinoapi import api
+            from hinoapi import api
             info = info.lower().replace(" ", "")
             for i in list(api["shards"]["handler"].keys()):
                 if i in info:
