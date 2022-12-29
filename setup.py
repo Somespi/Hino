@@ -6,7 +6,7 @@ LONG_DESC = open('./README.md', 'r').read()
 
 setup(
     name='hino',
-    version='0.0.46',
+    version='0.0.47',
     author='Someone',
     author_email='',
     description='unofficial API package for Hino.',
