@@ -6,7 +6,7 @@ LONG_DESC = open('./README.md', 'r').read()
 
 setup(
     name='hino',
-    version='0.0.48',
+    version='0.0.481',
     author='Someone',
     author_email='',
     description='unofficial API package for Hino.',
@@ -15,7 +15,7 @@ setup(
     license='MIT',
     keywords=["API","hino","unofficial","Hino"],
     url='https://github.com/Somespi/Hino/',
-    packages=find_packages(),
+    packages=["hino"],
     scripts=[],
     install_requires=['requests'],
     include_package_data=True,
