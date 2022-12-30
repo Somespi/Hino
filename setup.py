@@ -16,7 +16,6 @@ setup(
     keywords=["API","hino","unofficial","Hino"],
     url='https://github.com/Somespi/Hino/',
     packages=find_packages(),
-    scripts=[],
     install_requires=['requests'],
     include_package_data=True,
     zip_safe=False,
