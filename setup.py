@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as readme_file:
 
 setup(
     name='hino',
-    version='0.0.484',
+    version='0.0.485',
     author='Someone',
     author_email='',
     description='unofficial API package for Hino.',
