@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
-import os
 
-LONG_DESC = open('./README.md', 'r').read()
-
+with open('README.md', 'r', encoding='utf-8') as readme_file:
+   LONG_DESC = readme_file.read()
 
 setup(
     name='hino',
