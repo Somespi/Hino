@@ -1,1 +1,1 @@
-from hinoapi import Hino 
+from hino.hinoapi import Hino 
