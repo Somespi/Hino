@@ -1,1 +1,1 @@
-
+from hinoapi import Hino 
