@@ -7,10 +7,19 @@
  
  ## Installation
  you can install this package by typing
- 
  ```py
  $ pip install hino
  ```
+
+## Usage
+```py
+from hino import Hino
+
+hino = Hino()
+
+print(*hino.developers)
+ 
+```
 
 There are 4 main methods to fetch the data: 
  
@@ -19,12 +28,6 @@ There are 4 main methods to fetch the data:
  `getbasics()`
  `gethandler()`
 
- simple code:
- ```py
- hino = Hino()
- print(hino.getclient("name"))
- 
-```
 <hr>
 
 ## Variables
