@@ -13,9 +13,7 @@
 
 ## Usage
 ```py
-from hino import Hino
-
-hino = Hino()
+from hino import Hino as hino
 
 print(*hino.developers)
  
@@ -54,8 +52,7 @@ the 7 cases are:
 - latecy
 
 ```py
-hino = Hino()
-hino.getbasics("license")
+Hino.getbasics("license")
 ```
 <hr>
 
@@ -78,14 +75,12 @@ tip: if you left the `shardNum` blank and changed the value of `info` to *count*
 
 
 ```py
-hino = Hino()
-hino.getshards("type",2)
+Hino.getshards("type",2)
 ```
 
 
 ```py
-hino = Hino()
-hino.getshards("count")
+Hino.getshards("count")
 ```
 <hr>
 
@@ -104,8 +99,7 @@ the 6 cases are:
 - color - color2 - ping
 
 ```py
-hino = Hino()
-hino.getclient("name")
+Hino.getclient("name")
 ```
 <hr>
 
@@ -125,7 +119,6 @@ the 7 cases are:
 - module
 
 ```py
-hino = Hino()
-hino.gethandler("description")
+Hino.gethandler("description")
 ```
 <hr>

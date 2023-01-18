@@ -12,6 +12,7 @@ class Hino:
         developers = others["client"]["developers"]
         partners = others["client"]["partners"]
 
+        @classmethod
         def getbasics(self, info: str) -> str:
             """Return basic info about Hino"""
 
@@ -22,6 +23,7 @@ class Hino:
             else:
                 raise TypeError(f"\"{info}\" is not defined in \"Basics\".")
 
+        @classmethod
         def getshards(self, info: str, shardnum: int = None) -> str:
             """Return shards info about Hino"""
             info = info.lower().replace(" ", "")
@@ -39,7 +41,8 @@ class Hino:
                             f"\"{info}\" is not defined in \"shards Info\".")
                 else:
                     raise TypeError(f"\"Shard{shardnum}\" No such shard.")
-
+        
+        @classmethod
         def gethandler(self, info: str) -> str:
             """Return handler info about Hino"""
             info = info.lower().replace(" ", "")
@@ -49,6 +52,7 @@ class Hino:
             else:
                 raise TypeError(f"\"{info}\" is not defined in \"handler\".")
 
+        @classmethod
         def getclient(self, info: str) -> str:
             """Return client info about Hino"""
             info = info.lower().replace(" ", "")
@@ -57,3 +61,5 @@ class Hino:
                     return str(self.others["client"][i])
             else:
                 raise TypeError(f"\"{info}\" is not defined in \"client\".")
+
+
